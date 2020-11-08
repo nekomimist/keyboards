@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "nkns66 DVT"
+Title "nkns0 dvt (L)"
 Date "2020-11-03"
 Rev "0.1"
 Comp "nekomimist kobo."
@@ -1076,7 +1076,7 @@ U 1 1 5FA0C45B
 P 9500 2250
 F 0 "U1" H 9500 3087 60  0000 C CNN
 F 1 "ProMicro" H 9500 2981 60  0000 C CNN
-F 2 "kbd:ProMicro_v3.5" H 9600 1200 60  0001 C CNN
+F 2 "Keebio-Parts:ArduinoProMicro-ZigZag" H 9600 1200 60  0001 C CNN
 F 3 "" H 9600 1200 60  0000 C CNN
 	1    9500 2250
 	1    0    0    -1  
@@ -1255,17 +1255,6 @@ NoConn ~ 10200 1700
 Text GLabel 4500 6950 2    50   Input ~ 0
 led
 NoConn ~ 10200 2800
-$Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 5FAA66D7
-P 3950 6950
-F 0 "J2" H 3868 6625 50  0000 C CNN
-F 1 "SERIAL_LED" H 3868 6716 50  0000 C CNN
-F 2 "kbd:StripLED_1side" H 3950 6950 50  0001 C CNN
-F 3 "~" H 3950 6950 50  0001 C CNN
-	1    3950 6950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4150 6950 4500 6950
 Wire Wire Line
@@ -1276,4 +1265,15 @@ Wire Wire Line
 	4150 6850 4500 6850
 Wire Wire Line
 	4500 6850 4500 6750
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5FAA66D7
+P 3950 6950
+F 0 "J2" H 3868 6625 50  0000 C CNN
+F 1 "SERIAL_LED" H 3868 6716 50  0000 C CNN
+F 2 "kbd:StripLED_1side" H 3950 6950 50  0001 C CNN
+F 3 "~" H 3950 6950 50  0001 C CNN
+	1    3950 6950
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
