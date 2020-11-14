@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "nkns0 dvt (L)"
+Title "Ki-1 (nkns1)"
 Date "2020-11-03"
 Rev "0.1"
-Comp "nekomimist kobo."
+Comp "nekomimist.org"
 Comment1 ""
 Comment2 ""
 Comment3 ""
