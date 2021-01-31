@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Ki-1 (nkns1)"
-Date "2020-11-03"
-Rev "0.1"
+Title "Ki-1-r0.2 (nkns1)"
+Date "2021-01-24"
+Rev "0.2"
 Comp "nekomimist.org"
 Comment1 ""
 Comment2 ""
@@ -525,11 +525,6 @@ Connection ~ 3950 4900
 Connection ~ 3950 1850
 Wire Wire Line
 	9100 5050 9100 5500
-Wire Wire Line
-	7950 4450 7950 5500
-Connection ~ 7950 4450
-Wire Wire Line
-	7950 4000 7950 4450
 Connection ~ 8550 5950
 Wire Wire Line
 	9700 5950 9700 5800
@@ -726,17 +721,6 @@ F 3 "~" H 9700 5650 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:D D25
-U 1 1 5FA2D436
-P 8550 4600
-F 0 "D25" V 8596 4520 50  0000 R CNN
-F 1 "D" V 8505 4520 50  0000 R CNN
-F 2 "kbd:D3_TH_SMD" H 8550 4600 50  0001 C CNN
-F 3 "~" H 8550 4600 50  0001 C CNN
-	1    8550 4600
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:D D24
 U 1 1 5FA2D268
 P 7400 4600
@@ -888,17 +872,6 @@ F 1 "SW_PUSH" H 8250 5664 50  0000 C CNN
 F 2 "kbd:CherryMX_MidHeight_Hotswap" H 8250 5500 50  0001 C CNN
 F 3 "" H 8250 5500 50  0000 C CNN
 	1    8250 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L kbd:SW_PUSH SW26
-U 1 1 5FA269EB
-P 8250 4450
-F 0 "SW26" H 8250 4705 50  0000 C CNN
-F 1 "SW_PUSH" H 8250 4614 50  0000 C CNN
-F 2 "kbd:CherryMX_MidHeight_Hotswap" H 8250 4450 50  0001 C CNN
-F 3 "" H 8250 4450 50  0000 C CNN
-	1    8250 4450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1149,15 +1122,15 @@ Text GLabel 850  5950 0    50   Input ~ 0
 row4
 Wire Wire Line
 	10050 3750 9800 3750
-Text GLabel 10200 2300 2    50   Input ~ 0
+Text GLabel 10200 2200 2    50   Input ~ 0
 row0
-Text GLabel 10200 2400 2    50   Input ~ 0
+Text GLabel 10200 2300 2    50   Input ~ 0
 row1
-Text GLabel 10200 2500 2    50   Input ~ 0
+Text GLabel 10200 2400 2    50   Input ~ 0
 row2
-Text GLabel 10200 2600 2    50   Input ~ 0
+Text GLabel 10200 2500 2    50   Input ~ 0
 row3
-Text GLabel 10200 2700 2    50   Input ~ 0
+Text GLabel 10200 2600 2    50   Input ~ 0
 row4
 Text GLabel 8800 2100 0    50   Input ~ 0
 col0
@@ -1175,74 +1148,72 @@ Text GLabel 8800 2700 0    50   Input ~ 0
 col6
 Text GLabel 8800 2800 0    50   Input ~ 0
 col7
-NoConn ~ 10200 2100
-NoConn ~ 10200 2200
 $Comp
 L power:GND #PWR09
 U 1 1 5FB57CD6
-P 2800 7100
-F 0 "#PWR09" H 2800 6850 50  0001 C CNN
-F 1 "GND" H 2805 6927 50  0000 C CNN
-F 2 "" H 2800 7100 50  0001 C CNN
-F 3 "" H 2800 7100 50  0001 C CNN
-	1    2800 7100
+P 1450 7100
+F 0 "#PWR09" H 1450 6850 50  0001 C CNN
+F 1 "GND" H 1455 6927 50  0000 C CNN
+F 2 "" H 1450 7100 50  0001 C CNN
+F 3 "" H 1450 7100 50  0001 C CNN
+	1    1450 7100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR07
 U 1 1 5FB58F19
-P 2800 6750
-F 0 "#PWR07" H 2800 6600 50  0001 C CNN
-F 1 "VCC" H 2815 6923 50  0000 C CNN
-F 2 "" H 2800 6750 50  0001 C CNN
-F 3 "" H 2800 6750 50  0001 C CNN
-	1    2800 6750
+P 1450 6750
+F 0 "#PWR07" H 1450 6600 50  0001 C CNN
+F 1 "VCC" H 1465 6923 50  0000 C CNN
+F 2 "" H 1450 6750 50  0001 C CNN
+F 3 "" H 1450 6750 50  0001 C CNN
+	1    1450 6750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 6875 2800 6875
+	1200 6875 1450 6875
 $Comp
 L kbd:MJ-4PP-9 J1
 U 1 1 5FB56881
-P 2350 6900
-F 0 "J1" H 2381 7176 50  0000 C CNN
-F 1 "MJ-4PP-9" H 2381 7085 50  0000 C CNN
-F 2 "kbd:MJ-4PP-9" H 2625 7075 50  0001 C CNN
-F 3 "~" H 2625 7075 50  0001 C CNN
-	1    2350 6900
+P 1000 6900
+F 0 "J1" H 1031 7176 50  0000 C CNN
+F 1 "MJ-4PP-9" H 1031 7085 50  0000 C CNN
+F 2 "kbd:MJ-4PP-9" H 1275 7075 50  0001 C CNN
+F 3 "~" H 1275 7075 50  0001 C CNN
+	1    1000 6900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2800 6750 2800 6875
+	1450 6750 1450 6875
 Wire Wire Line
-	2550 6925 2800 6925
+	1200 6925 1450 6925
 Wire Wire Line
-	2800 6925 2800 7100
-NoConn ~ 2550 6825
-Text GLabel 2900 6975 2    50   Input ~ 0
+	1450 6925 1450 7100
+NoConn ~ 1200 6825
+Text GLabel 1550 6975 2    50   Input ~ 0
 data
 Wire Wire Line
-	2550 6975 2900 6975
+	1200 6975 1550 6975
 $Comp
 L power:VCC #PWR08
 U 1 1 5FA25C6F
-P 4500 6750
-F 0 "#PWR08" H 4500 6600 50  0001 C CNN
-F 1 "VCC" H 4515 6923 50  0000 C CNN
-F 2 "" H 4500 6750 50  0001 C CNN
-F 3 "" H 4500 6750 50  0001 C CNN
-	1    4500 6750
+P 3150 6750
+F 0 "#PWR08" H 3150 6600 50  0001 C CNN
+F 1 "VCC" H 3165 6923 50  0000 C CNN
+F 2 "" H 3150 6750 50  0001 C CNN
+F 3 "" H 3150 6750 50  0001 C CNN
+	1    3150 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 5FA263D7
-P 4500 7100
-F 0 "#PWR010" H 4500 6850 50  0001 C CNN
-F 1 "GND" H 4505 6927 50  0000 C CNN
-F 2 "" H 4500 7100 50  0001 C CNN
-F 3 "" H 4500 7100 50  0001 C CNN
-	1    4500 7100
+P 3150 7100
+F 0 "#PWR010" H 3150 6850 50  0001 C CNN
+F 1 "GND" H 3155 6927 50  0000 C CNN
+F 2 "" H 3150 7100 50  0001 C CNN
+F 3 "" H 3150 7100 50  0001 C CNN
+	1    3150 7100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1252,28 +1223,85 @@ led
 Text GLabel 8800 1800 0    50   Input ~ 0
 data
 NoConn ~ 10200 1700
-Text GLabel 4500 6950 2    50   Input ~ 0
+Text GLabel 3150 6950 2    50   Input ~ 0
 led
-NoConn ~ 10200 2800
 Wire Wire Line
-	4150 6950 4500 6950
+	2800 6950 3150 6950
 Wire Wire Line
-	4150 7050 4500 7050
+	2800 7050 3150 7050
 Wire Wire Line
-	4500 7050 4500 7100
+	3150 7050 3150 7100
 Wire Wire Line
-	4150 6850 4500 6850
+	2800 6850 3150 6850
 Wire Wire Line
-	4500 6850 4500 6750
+	3150 6850 3150 6750
 $Comp
 L Connector_Generic:Conn_01x03 J2
 U 1 1 5FAA66D7
-P 3950 6950
-F 0 "J2" H 3868 6625 50  0000 C CNN
-F 1 "SERIAL_LED" H 3868 6716 50  0000 C CNN
-F 2 "kbd:StripLED_rev" H 3950 6950 50  0001 C CNN
-F 3 "~" H 3950 6950 50  0001 C CNN
-	1    3950 6950
+P 2600 6950
+F 0 "J2" H 2518 6625 50  0000 C CNN
+F 1 "SERIAL_LED" H 2518 6716 50  0000 C CNN
+F 2 "kbd:StripLED_rev" H 2600 6950 50  0001 C CNN
+F 3 "~" H 2600 6950 50  0001 C CNN
+	1    2600 6950
 	-1   0    0    -1  
 $EndComp
+Text GLabel 10200 2700 2    50   Input ~ 0
+re1
+$Comp
+L Device:Rotary_Encoder_Switch SW35
+U 1 1 601117CF
+P 4750 7000
+F 0 "SW35" H 4750 7367 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 4750 7276 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm" H 4600 7160 50  0001 C CNN
+F 3 "~" H 4750 7260 50  0001 C CNN
+	1    4750 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4450 6900 0    50   Input ~ 0
+re1
+Text GLabel 4450 7100 0    50   Input ~ 0
+re2
+$Comp
+L power:GND #PWR0101
+U 1 1 601A180B
+P 4100 7150
+F 0 "#PWR0101" H 4100 6900 50  0001 C CNN
+F 1 "GND" H 4105 6977 50  0000 C CNN
+F 2 "" H 4100 7150 50  0001 C CNN
+F 3 "" H 4100 7150 50  0001 C CNN
+	1    4100 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 7150 4100 7000
+Wire Wire Line
+	4100 7000 4450 7000
+Text GLabel 8400 4400 0    50   Input ~ 0
+RE_SW
+Text GLabel 5050 6900 2    50   Input ~ 0
+col6
+Text GLabel 5050 7100 2    50   Input ~ 0
+RE_SW
+Text GLabel 10200 2800 2    50   Input ~ 0
+re2
+$Comp
+L Device:D D25
+U 1 1 5FA2D436
+P 8550 4600
+F 0 "D25" V 8596 4520 50  0000 R CNN
+F 1 "D" V 8505 4520 50  0000 R CNN
+F 2 "kbd:D3_TH_SMD" H 8550 4600 50  0001 C CNN
+F 3 "~" H 8550 4600 50  0001 C CNN
+	1    8550 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 4000 7950 5500
+Wire Wire Line
+	8400 4400 8550 4400
+Wire Wire Line
+	8550 4400 8550 4450
+NoConn ~ 10200 2100
 $EndSCHEMATC
