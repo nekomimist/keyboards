@@ -1,6 +1,6 @@
 * Nekomimist's keyboards
 
-1. nekonos0 (nekonos prototype)
+** nekonos0 (nekonos prototype)
 
 - Name :: キ1-r0.0 (nakonos0 evt)
 - Board :: [[https://e3w2q.github.io/9/][SU120]]を利用した手作り
@@ -8,7 +8,7 @@
 - Firmware :: [[https://github.com/nekomimist/qmk_firmware/tree/nekomimist/keyboards/e3w2q/su120/rev1]]
 - Photo :: [[https://twitter.com/nekomimist/status/1332611166024069120][twitter]]
 
-2. nekonos1 rev0.1
+** nekonos1 rev0.1
 
 - Name :: キ1-r0.1 (nekonos1 dvt)
 - Board :: 自作
@@ -17,7 +17,7 @@
 - Firmware :: [[https://github.com/nekomimist/qmk_firmware/tree/nekomimist/keyboards/nkns1/rev01]]
 - Photo :: [[https://twitter.com/nekomimist/status/1341686424458805250][twitter]]
 
-3. nekonos0r (nekonos prototype-r)
+** nekonos0r (nekonos prototype-r)
 
 - Name :: nakonos0r
 - Board :: [[https://e3w2q.github.io/9/][SU120]]を利用した手作り
@@ -25,7 +25,7 @@
 - Firmware :: [[https://github.com/nekomimist/qmk_firmware/tree/nekomimist/keyboards/e3w2q/su120/rev1_2knob]]
 - Photo :: [[https://twitter.com/nekomimist/status/1352829978916704256][twitter]]
 
-4. nekonos1 rev0.2
+** nekonos1 rev0.2
 
 - Name :: キ1-r0.2 (nekonos1)
 - Board :: 自作
@@ -34,7 +34,7 @@
 - Firmware :: [[https://github.com/nekomimist/qmk_firmware/tree/nekomimist/keyboards/nkns1/rev02]]
 - Photo :: [[https://twitter.com/nekomimist/status/1358013858917412865][twitter]]
 
-5. nekonote0 
+** nekonote0 
 
 - Name :: キ2-r0.0 (nekonote0)
 - Board :: [[https://e3w2q.github.io/11/][te96]]を利用した手作り
